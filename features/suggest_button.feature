@@ -8,4 +8,4 @@ Feature: Test the functionality of the Suggest button
   Scenario: The user should be able to find the suggested name generated on the suggested names page
     Given They press the suggest button
     When They submit the form
-    Then They can find that name in the list of generated names
+    Then They can find either the first or last name in the list of generated names
