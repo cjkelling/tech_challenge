@@ -1,6 +1,7 @@
 # The user should be able to enter a number between 10 and 100 and get that many names generated
 Given(/^A user is on the fantasy name generator page$/) do
   find('h2', :text => "Name Generator")
+  find('h3', :text => 'Find the Perfect Fantasy Name')
 end
 
 When(/^They enter a valid number, "(.*?)", in the search field$/) do |int|
@@ -13,7 +14,7 @@ Then(/^They are given an amount of names equal to their valid number, "(.*?)"$/)
   page.assert_selector('div.name_heading', count: int)
 end
 
-# The user should receive the 10 names if number entered is below 10
+# The user should receive 10 names if number entered is below 10
 When(/^They enter a number in the search field below 10, "(.*?)"$/) do |int|
   fill_in 'count', with: int
   page.click_button("Write me some fantasy names")
