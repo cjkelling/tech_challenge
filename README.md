@@ -33,7 +33,7 @@ Write automated test scenarios to validate each of the following:
   - Validates name field is no longer empty after button is pressed
 
 5. Validate that the suggested human name (either first or last name) from scenario 4 is present at least once in the list of names
-  - Validates random name generated can be found on suggested names page
+  - Validates either first or last name that was randomly generated can be found on suggested names page
 
 6. Submit the form with a specified number of names and validate that the correct number of suggestions populates
   - Validates that a number can be entered into the number field

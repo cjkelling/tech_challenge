@@ -25,6 +25,6 @@ end
 
 Then(/^All of the names generated match the category chosen, "(.*?)"$/) do |category|
   page.all('div.name').each do |name|
-    page.assert_text(name.text, "Ideal for a #{category}")
+    name.assert_text(:visible, "Ideal for a #{category}")
   end
 end
