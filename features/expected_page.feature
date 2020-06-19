@@ -1,5 +1,5 @@
-Feature: Tests the functionality that a user can visit the expected page for the Fantasy Name Generator
+Feature: Tests the functionality that when a user visits the Fantasy Name Generator, they arrive on the expected page
 
-  Scenario: The user should be able to visit the page for the Fantasy Name Generator
-    Given The user is on the fantasy name generator page
-    Then I see the text "Name Generator" and I see the text "Find the Perfect Fantasy Name"
+  Scenario: The user should be able to visit the expected page for the Fantasy Name Generator
+    Given The user attempts to visit the Fantasy Name Generator page
+    Then They see the text "Name Generator" and they see the text "Find the Perfect Fantasy Name"
