@@ -40,3 +40,4 @@ Write automated test scenarios to validate each of the following:
   - Validates the number of names returned matches a valid number entered, 10 - 100
   - Validates a return of 10 names if a number lower than 10 is entered
   - Validates a return of 100 names if a number greater than 100 is entered
+  - Added sleep(0.5) to these tests to prevent error, unable to hit button after entering number
