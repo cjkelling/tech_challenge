@@ -3,8 +3,7 @@
 
 # The user should be able press the suggest button and have a name randomly generated in the field
 Given(/^User is on the fantasy name generator page$/) do
-  find('h2', :text => "Name Generator")
-  find('h3', :text => 'Find the Perfect Fantasy Name')
+  validate_main_page
 end
 
 When(/^They press the suggest button$/) do
@@ -20,8 +19,7 @@ end
 
 # The user should be able to find the suggested name generated on the suggested names page
 Given(/^A User is on the Fantasy Name Generator page and they press the suggest button$/) do
-  find('h2', :text => "Name Generator")
-  find('h3', :text => 'Find the Perfect Fantasy Name')
+  validate_main_page
   page.click_button("Suggest")
 end
 

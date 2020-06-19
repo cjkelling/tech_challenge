@@ -1,7 +1,6 @@
 # The user should be able to select one category and submit the form
 Given(/^A user is at the fantasy name generator page$/) do
-  find('h2', :text => "Name Generator")
-  find('h3', :text => 'Find the Perfect Fantasy Name')
+  validate_main_page
 end
 
 When(/^They select only one category, "(.*?)"$/) do |category|
