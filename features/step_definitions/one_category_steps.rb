@@ -14,6 +14,7 @@ end
 
 Then(/^They are able to submit the form$/) do
   page.click_button("Write me some fantasy names")
+  find('h2', :text => "Best Suggestions")
 end
 
 # All names generated for the user should match the one category the user chose
